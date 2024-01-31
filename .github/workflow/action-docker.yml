@@ -1,5 +1,5 @@
 #GitHub Action 名称
-name: Docker Image CI
+name: Docker Image CI remote-command-image
 #触发器设置(推送和拉去都会触发, 下面是主分支)
 on:
   push:
@@ -38,4 +38,4 @@ jobs:
           #在这里通过加入需要编译的平台和前面配好的QEMU，buildx来达到多平台编译
           platforms: linux/amd64,linux/arm64
           #指定用户/仓库名
-          tags: zhufudea/tcpdump-static:latest
+          tags: zhufudea/remote-command:latest
